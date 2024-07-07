@@ -63,3 +63,28 @@ For CI servers and headless environments, generate a new token with firebase log
     at process.processTimers (node:internal/timers:514:7)
 [error] 
 [error] Error: An unexpected error has occurred.
+[debug] [2024-07-07T10:34:43.025Z] ----------------------------------------------------------------------
+[debug] [2024-07-07T10:34:43.028Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\david\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-07-07T10:34:43.029Z] CLI Version:   13.10.2
+[debug] [2024-07-07T10:34:43.030Z] Platform:      win32
+[debug] [2024-07-07T10:34:43.030Z] Node Version:  v22.2.0
+[debug] [2024-07-07T10:34:43.030Z] Time:          Sun Jul 07 2024 11:34:43 GMT+0100 (West Africa Standard Time)
+[debug] [2024-07-07T10:34:43.030Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-07T10:34:43.165Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-07T10:34:43.166Z] > authorizing via signed-in user (david.maduabuchi.243854@unn.edu.ng)
+[debug] [2024-07-07T10:34:43.166Z] [iam] checking project genghis-port for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-07-07T10:34:43.170Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/genghis-port:testIamPermissions [none]
+[debug] [2024-07-07T10:34:43.170Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/genghis-port:testIamPermissions x-goog-quota-user=projects/genghis-port
+[debug] [2024-07-07T10:34:43.171Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/genghis-port:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-07T10:34:59.366Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/genghis-port:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasehosting.sites.update\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/genghis-port:testIamPermissions failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2024-07-07T10:34:59.368Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/genghis-port:testIamPermissions
+[debug] [2024-07-07T10:34:59.372Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/genghis-port [none]
+[debug] [2024-07-07T10:35:12.465Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/genghis-port, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/genghis-port failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2024-07-07T10:35:12.466Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/genghis-port (original: request to https://firebase.googleapis.com/v1beta1/projects/genghis-port failed, reason: Client network socket disconnected before secure TLS connection was established)
+[debug] [2024-07-07T10:35:17.492Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\david\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:267:49)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[error] 
+[error] Error: An unexpected error has occurred.
