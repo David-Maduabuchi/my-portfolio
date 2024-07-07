@@ -30,3 +30,36 @@ For CI servers and headless environments, generate a new token with firebase log
     at process.processTimers (node:internal/timers:514:7)
 [error] 
 [error] Error: An unexpected error has occurred.
+[debug] [2024-07-07T10:33:12.649Z] ----------------------------------------------------------------------
+[debug] [2024-07-07T10:33:12.655Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\david\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-07-07T10:33:12.657Z] CLI Version:   13.10.2
+[debug] [2024-07-07T10:33:12.657Z] Platform:      win32
+[debug] [2024-07-07T10:33:12.658Z] Node Version:  v22.2.0
+[debug] [2024-07-07T10:33:12.658Z] Time:          Sun Jul 07 2024 11:33:12 GMT+0100 (West Africa Standard Time)
+[debug] [2024-07-07T10:33:12.658Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-07T10:33:12.665Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-07-07T10:33:12.881Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-07T10:33:12.882Z] > authorizing via signed-in user (david.maduabuchi.243854@unn.edu.ng)
+[debug] [2024-07-07T10:33:12.882Z] [iam] checking project genghis-port for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-07-07T10:33:12.884Z] > refreshing access token with scopes: []
+[debug] [2024-07-07T10:33:12.887Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-07-07T10:33:12.887Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-07-07T10:33:20.781Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-07-07T10:33:20.782Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-07-07T10:33:24.049Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-07-07T10:33:24.050Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-07-07T10:33:24.219Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/genghis-port:testIamPermissions [none]
+[debug] [2024-07-07T10:33:24.219Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/genghis-port:testIamPermissions x-goog-quota-user=projects/genghis-port
+[debug] [2024-07-07T10:33:24.219Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/genghis-port:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-07T10:33:49.884Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/genghis-port:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasehosting.sites.update\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/genghis-port:testIamPermissions failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2024-07-07T10:33:49.885Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/genghis-port:testIamPermissions
+[debug] [2024-07-07T10:33:49.888Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/genghis-port [none]
+[debug] [2024-07-07T10:34:19.935Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/genghis-port, {"headers":{},"method":"GET","signal":{}}): AbortError: The user aborted a request.
+[debug] [2024-07-07T10:34:19.936Z] Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/genghis-port (original: The user aborted a request.)
+[debug] [2024-07-07T10:34:24.958Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\david\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:267:49)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[error] 
+[error] Error: An unexpected error has occurred.
