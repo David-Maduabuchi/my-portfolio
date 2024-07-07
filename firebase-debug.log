@@ -1,0 +1,32 @@
+[debug] [2024-07-07T10:31:03.337Z] ----------------------------------------------------------------------
+[debug] [2024-07-07T10:31:03.350Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\david\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-07-07T10:31:03.351Z] CLI Version:   13.10.2
+[debug] [2024-07-07T10:31:03.353Z] Platform:      win32
+[debug] [2024-07-07T10:31:03.353Z] Node Version:  v22.2.0
+[debug] [2024-07-07T10:31:03.354Z] Time:          Sun Jul 07 2024 11:31:03 GMT+0100 (West Africa Standard Time)
+[debug] [2024-07-07T10:31:03.355Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-07T10:31:03.415Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-07-07T10:31:03.932Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-07T10:31:03.933Z] > authorizing via signed-in user (david.maduabuchi.243854@unn.edu.ng)
+[debug] [2024-07-07T10:31:03.933Z] [iam] checking project genghis-port for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-07-07T10:31:03.936Z] > refreshing access token with scopes: []
+[debug] [2024-07-07T10:31:03.938Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-07-07T10:31:03.938Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-07-07T10:31:21.798Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------264087415721385500606464","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2024-07-07T10:31:21.800Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-07-07T10:31:21.803Z] > refreshing access token with scopes: []
+[debug] [2024-07-07T10:31:21.806Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-07-07T10:31:21.807Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-07-07T10:31:37.484Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------174501323453610023949513","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2024-07-07T10:31:37.485Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-07-07T10:31:42.525Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\david\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:267:49)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[error] 
+[error] Error: An unexpected error has occurred.
